@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Boot M2</title>
+    <script src="main.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -43,28 +44,28 @@
                 </div>
             <div class="user-details">
                 <div class="input-box">
-                    <span class="details">Consulta CEP</span>
-                    <input type="number" placeholder="XXXXX-XXX" required>
+                <label for="cep">Consulte seu CEP</label>       
+                <input type="text"  id="cep" placeholder="XXXXX-XXX" required>
                 </div>    
-            <div class="end-rua">
-                <label for="rua">Rua</label>
-                <input type="text" name="rua" id="rua" required>
+            <div class="endereco">
+                <label for="endereco">Endereço</label>
+                <input type="text"  id="endereco" required>
             </div>
-            <div class="end-numero">
-                <label for="rua">Numero</label>
-                <input type="numero" name="num" id="num" required>
+            <div class="endereco">
+                <label for="numero">Numero</label>
+                <input type="numero"  id="numero" required>
             </div> 
-            <div class="end-bairro">
+            <div class="endereco">
                 <label for="bairro">Bairro</label>
-                <input type="text" name="bairro" id="bairro" required>
+                <input type="text"  id="bairro" required>
             </div>    
-            <div class="end-cidade">
+            <div class="endereco">
                 <label for="cidade">Cidade</label>
-                <input type="text" name="cidade" id="cidade" required>
+                <input type="text"  id="cidade" required>
             </div>    
-            <div class="end-estado">
+            <div class="endereco">
                 <label for="">Estado</label>
-                <input type="text" name="estado" id="estado" required>
+                <input type="text"  id="estado" required>
             </div>           
         </div>
         <div class="button">
