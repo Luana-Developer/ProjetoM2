@@ -5,7 +5,7 @@ const completarFormulario = (endereco) =>{
  document.getElementById('cidade').value = endereco.localidade;
  document.getElementById('estado').value = endereco.uf;
 };
-
+ 
 //função para pesquisar o cep pela url da API
     const pesquisarCep = async() => {
     const cep = document.getElementById('cep').value;
