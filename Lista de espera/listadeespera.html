@@ -1,77 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Boot M2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="main.js" defer></script>
-   </head>
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+</head>
 <body>
-    <div class="container">
-        <div class="title">Lista de espera</div>
-        <form action="#">
-            <div class="user-details">
-                <div class="input-box">
-                    <span class="details">Nome</span>
-                    <input type="text" placeholder="Digite seu nome" required>
-                </div>
-            <div class="user-details">
-                <div class="input-box">
-                    <span class="details">Sobrenome</span>
-                    <input type="text" placeholder="Digite seu sobrenome" required>
-                </div>    
-            <div class="user-details">
-                <div class="input-box">
-                    <span class="details">Email</span>
-                    <input type="email" placeholder="Digite seu email" required>
-                </div>
-            <div class="user-details">
-                <div class="input-box">
-                    <span class="details">RG</span>
-                    <input type="number" placeholder="Digite seu RG" required>
-                     </div>
-            <div class="user-details">
-                <div class="input-box">
-                    <span class="details">Senha</span>
-                    <input type="password" placeholder="Digite sua senha" required>
-                </div>
-            <div class="user-details">
-                <div class="input-box">
-                    <span class="details">Confirme senha</span>
-                    <input type="password" placeholder="Confirme sua senha" required>
-                </div>
-            <div class="user-details">
-                <div class="input-box">
-                <label for="cep">Consulte seu CEP</label>       
-                <input type="text"  id="cep" placeholder="XXXXX-XXX" required>
+    <header class="d-flex justify-content-center m-5">
+        <h1 class="display-2 fst-italic border-bottom border-primary">Cadastre-se na Lista de espera</h1>
+    </header>
+    <main class="container">
+        <form class="row g-3 border border-5 p-2 m-5"">
+            <div class="col-md-6">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" placeholder="Digite seu Nome" required>
+              </div>
+              <div class="col-md-6">
+                <label for="sobnome" class="form-label">Sobrenome</label>
+                <input type="text" class="form-control" id="sobnome" placeholder="Digite seu Sobrenome" required>
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Digite seu Email" required>
+              </div>
+              <div class="col-md-6">
+                <label for="rgcpf" class="form-label">Rg ou Cpf</label>
+                <input type="number" class="form-control" id="rgcpf" placeholder="Digite seu Rg ou Cpf" required>
+              </div>
+              <div class="col-md-6">
+                <label for="senha" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" required>
+              </div>
+              <div class="col-md-6">
+                <label for="senha" class="form-label">Confirme Senha</label>
+                <input type="password" class="form-control" id="senha" placeholder="Confirme sua senha" required>
+              </div>
+              <div class="col-md-6">
+                <label for="cep" class="form-label">Consulte seu CEP</label>       
+                <input type="text" class="form-control" id="cep" placeholder="XXXXX-XXX" required>
                 </div>    
             <div class="endereco">
-                <label for="endereco">Endereço</label>
-                <input type="text"  id="endereco" required>
+                <label for="endereco" class="form-label">Endereço</label>
+                <input type="text" class="form-control" id="endereco" required>
             </div>
             <div class="endereco">
-                <label for="numero">Numero</label>
-                <input type="numero"  id="numero" required>
+                <label for="numero" class="form-label">Numero</label>
+                <input type="numero" class="form-control" id="numero" required>
             </div> 
             <div class="endereco">
-                <label for="bairro">Bairro</label>
-                <input type="text"  id="bairro" required>
+                <label for="bairro" class="form-label">Bairro</label>
+                <input type="text" class="form-control" id="bairro" required>
             </div>    
             <div class="endereco">
-                <label for="cidade">Cidade</label>
-                <input type="text"  id="cidade" required>
+                <label for="cidade" class="form-label">Cidade</label>
+                <input type="text" class="form-control" id="cidade" required>
             </div>    
             <div class="endereco">
-                <label for="">Estado</label>
-                <input type="text"  id="estado" required>
+                <label for="estado" class="form-label">Estado</label>
+                <input type="text" class="form-control" id="estado" required>
             </div>           
         </div>
-        <div class="button">
-            <input  id="confirmacadastro" type="submit" value="Registro"> 
-        </div>
+        <div class="button d-flex justify-content-center p-5">
+            <input type="submit" id="confirmacadastro" class="btn btn-primary" value="Cadastre-se"> 
+        </div>    
         </form>
-    </div>
+    </main>
 </body>
 </html>
