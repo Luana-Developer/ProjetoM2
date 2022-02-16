@@ -38,3 +38,8 @@ document.getElementById('cep').addEventListener('focusout', function(){
  }
 })
 
+let button = document.getElementById('confirmacadastro')
+button.addEventListener('click', function() {
+    window.location = "confimacadastro.html"
+})
+
