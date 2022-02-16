@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=div class="container">
-    <link rel="stylesheet" href="tentativa.css"></style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+   
 </head>
+<script src="reset.js" defer> </script>
 
 <body>
 
@@ -17,22 +19,22 @@
           <h1>Alterar senha</h1> 
           
        
-          
+          <form name="formuser" action="" method="POST">
           <p> 
-            <label for="email_cad">Codigo recebido</label>
-            <input id="number" name="number" required="required" type="text" placeholder="123456"/> 
+            Codigo recebido
+            <input name="number" required="required" type="text" placeholder="123456"/> 
           </p>
 
           <p> 
-            <label for="senha_cad">Nova Senha</label>
-            <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="*****"/>
+            Nova Senha
+            <input name="senha" required="required" type="password" placeholder="*****"/> <br><br>
+
+            Confirme Sua senha
+            <input  name="rep_senha" required="required" type="password" placeholder="****" />
+
           </p>
-          
-          <p> 
-            <label for="senha_cad">Confirme Sua senha</label>
-            <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="****"/>
-          </p>
-          
+
+          <input type="submit" onclick="return validar()">
           <p> 
             
             <input type="submit" value="Alterar Senha" >
