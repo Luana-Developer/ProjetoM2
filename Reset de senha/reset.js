@@ -12,7 +12,7 @@ function validar() {
  
     if (senha != rep_senha){
         alert ("senhas diferentes");
-        form1.rep_senha.focus();
+        formuser.rep_senha.focus();
         return false;
  
     }
