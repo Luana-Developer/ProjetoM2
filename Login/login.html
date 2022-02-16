@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../style-reset.css" rel="stylesheet">
     <link href="./login.css" rel="stylesheet">
-    <title>PblurojetoM2</title>
-    
+    <title>JASO</title>
+    <script type="text/javascript" src="Login.js"> </script> 
 </head>
 <body>
     <header>
@@ -25,27 +25,22 @@
 
             <div class="card-content">
 
-                <div class="card-content-area">
+                <form method="post" action="" onSubmit="return ( verifica() )" name="frmEnvia">
+                    <label for="email">Usuário (E-mail): </label>
+                    <input name="email" type="text" class="input" id="email" onblur="checarEmail();" />
+                    <div class="card-content-area">
 
-                    <label for="usuario">Usuário</label>
+                        <label for="password">Senha</label>
+    
+                        <input type="password" id="password" autocomplete="off">
+    
+                    </div>
+                    <input name="submit" type="submit" value="Login" />
+                 </form>
 
-                    <input type="text" id="usuario" autocomplete="off">
-
-                </div>
-
-                <div class="card-content-area">
-
-                    <label for="password">Senha</label>
-
-                    <input type="password" id="password" autocomplete="off">
-
-                </div>
+                
 
             </div>
-
-            <div class="card-footer">
-
-                <input type="submit" value="login" class="submit">
 
                 <a href="../Reset de senha/resetdesenha.html" class="recuperar_senha">Esqueceu a senha?</a>
                 <br>
