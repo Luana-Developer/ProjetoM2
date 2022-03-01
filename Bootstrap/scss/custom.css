@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+/* geral */
+.hover:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.ld{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/* index */
+.backazul{
+    background-image: url(../../backazul.png);
+}
+.arr{
+    margin: 10px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.tl{
+    background-color: #1C32FB;
+    max-width: 50%;
+    max-height: 30%;
+    padding: 30px;
+    align-self: center;
+}
+.gap{
+    gap: 20px;
+}
+.backroxo{
+    background-image: url(../../imagens/backroxo.png);
+    max-width: 50%;
+    padding: 30px;
+    color: black;
+    font-weight: bold;
+}
+.dark{
+    background-color: black;
+    background-size: 100%;
+}
+@media (max-width:700px) {
+    .arr{
+   flex-direction: column;
+    }
+    .media{
+      gap: 10px;  
+    }
+    .coll{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (min-width:700px) {
+    .tam{
+        max-width: 650px;
+        display: flex;
+        justify-content: center;
+    }
+}
