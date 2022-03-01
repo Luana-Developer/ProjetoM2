@@ -38,6 +38,11 @@
     color: black;
     font-weight: bold;
 }
+/* lista de espera  */
+.endereco{
+    display: none;
+}
+/* footer  */
 .dark{
     background-color: black;
     background-size: 100%;
