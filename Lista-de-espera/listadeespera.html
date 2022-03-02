@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="main.js" defer></script>
-  <link rel="stylesheet" href="style.css">
+  <script src="../scripts.js" defer></script>
   <link rel="stylesheet" href="../Bootstrap/scss/custom.css">
   <link rel="stylesheet" href="../Bootstrap/node_modules/bootstrap/compiler/bootstrap.css">
   <script src="../Bootstrap/node_modules/jquery/dist/jquery.js" defer></script>
@@ -65,7 +65,7 @@
       </div>
       <div class="col-md-6">
         <label for="senha" class="form-label">Confirme Senha</label>
-        <input type="password" class="form-control" id="senha" placeholder="Confirme sua senha" required>
+        <input type="password" class="form-control" id="confsenha" placeholder="Confirme sua senha" required>
       </div>
       <div class="col-md-6">
         <label for="cep" class="form-label">Consulte seu CEP</label>
@@ -109,10 +109,14 @@
         <label class="form-check-label" for="flexCheckDefault">
           Li e Aceito os <span class="hover">Termos e Condições</span>
         </label>
+        <div class="d-flex justify-content-center">
+        <div id="liveAlertPlaceholder"></div>
+        <button type="button" class="btn btn-primary p-2 m-3 mt-5" id="liveAlertBtn">Cadastre-se</button>
+        </div>
+        </div>
+        <div class="d-flex justify-content-center m-2 fs-4">
+          <a href="../Login/login.html" class="text-white">Faça seu Login!</a>
       </div>
-      <div class="d-flex justify-content-center">
-      <button type="button" class="btn btn-primary p-2 m-3"><a href="../Lista de espera/confimacadastro.html" class="text-white text-decoration-none">Cadastre-se</a></button>
-     </div>
     </form>
   </main>
   <footer class="dark">

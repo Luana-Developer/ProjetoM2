@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Bootstrap/scss/custom.css">
+    <script src="../scripts.js" defer></script>
     <link rel="stylesheet" href="../Bootstrap/node_modules/bootstrap/compiler/bootstrap.css">
     <script src="../Bootstrap/node_modules/jquery/dist/jquery.js" defer></script>
     <script src="../Bootstrap/node_modules/popper.js/dist/popper.js" defer></script>
@@ -24,11 +25,11 @@
             aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto my-2 my-lg-0">
-              <li class="nav-item hover"><a class="nav-link text-black fs-5" href="../Home/apresentação.html">Sobre</a></li>
+              <li class="nav-item hover"><a class="nav-link text-black fs-5" href="../Home/apresentacao.html">Sobre</a></li>
               <li class="nav-item hover"><a class="nav-link text-black fs-5" href="../Home/Contatos.html">Contato</a></li>
               <li class="nav-item hover"><a class="nav-link text-black fs-5" href="../Login/login.html">Login</a></li>
               <li class="nav-item hover"><a class="nav-link text-black fs-5"
-                  href="../Lista de espera/listadeespera.html">Cadastre-se</a></li>
+                  href="../Lista-de-espera/listadeespera.html">Cadastre-se</a></li>
             </ul>
           </div>
         </div>
@@ -41,24 +42,26 @@
         <div class="d-flex justify-content-center m-5">
             <h1 class="display-1 border-bottom border-primary fst-italic">Faça seu Login</h1>
         </div>
-        <form class="border border-5 p-2 m-5 tam coll d-flex" onsubmit="return verifica()" name="frmEnvia">
+
+        <form class="border border-5 p-2 m-5 coll " onsubmit="return verifica()" name="frmEnvia">
+
             <div class="d-flex justify-content-center">
-                <div class="mb-3 w-75">
+                <div class="mb-3">
                     <label for="usuario" class="form-label">Usuário</label>
                     <input type="text" class="form-control" id="usuario" onblur="checarEmail();">
                 </div>
             </div>
             <div class="d-flex justify-content-center">
-                <div class="mb-3 w-75">
+                <div class="mb-3">
                     <label for="senha" class="form-label">Senha</label>
                     <input type="text" class="form-control" id="senha">
                 </div>
             </div>
             <div class="d-flex justify-content-center m-3">
-                <button type="submit" class="btn btn-primary">Login</button>
+                <button type="submit" class="btn btn-primary"><a href="../Home/apresentacao.html" class="text-white text-decoration-none">Login</a></button>
             </div>
             <div class="d-flex justify-content-center m-2">
-                <a href="../Lista de espera/listadeespera.html" class="text-white">Faça seu cadastro!</a>
+                <a href="../Lista-de-espera/listadeespera.html" class="text-white">Faça seu cadastro!</a>
             </div>
             <div class="d-flex justify-content-center m-2">
                 <a href="../Reset de senha/resetdesenha.html" class="text-white">Esqueci minha senha</a>
