@@ -11,7 +11,7 @@
     <script src="../Bootstrap/node_modules/jquery/dist/jquery.js" defer></script>
     <script src="../Bootstrap/node_modules/popper.js/dist/popper.js" defer></script>
     <script src="../Bootstrap/node_modules/bootstrap/dist/js/bootstrap.js" defer></script>
-    <script type="text/javascript" src="Login.js" defer></script>
+    <script type="text/javascript" src="../Login/Login.js" defer></script>
     <link rel="icon" href="../imagens/JaSOsf.gif">
     <title>Login</title>
 </head>
@@ -43,22 +43,22 @@
             <h1 class="display-1 border-bottom border-primary fst-italic">Faça seu Login</h1>
         </div>
 
-        <form class="border border-5 p-2 m-5 coll " onsubmit="return verifica()" name="frmEnvia">
+        <form class="border border-5 p-2 m-5 coll " method="post" action="../Home/apresentacao.html">
 
             <div class="d-flex justify-content-center">
                 <div class="mb-3">
-                    <label for="usuario" class="form-label">Usuário</label>
-                    <input type="text" class="form-control" id="usuario" onblur="checarEmail();">
+                    <label for="email" class="form-label">Usuário</label>
+                    <input type="email" class="form-control" placeholder="Digite seu E-mail" required name="email" id="email">
                 </div>
             </div>
             <div class="d-flex justify-content-center">
                 <div class="mb-3">
                     <label for="senha" class="form-label">Senha</label>
-                    <input type="text" class="form-control" id="senha">
+                    <input type="text" class="form-control" id="senha" placeholder="Digite sua Senha" required>
                 </div>
             </div>
             <div class="d-flex justify-content-center m-3">
-                <button type="submit" class="btn btn-primary"><a href="../Home/apresentacao.html" class="text-white text-decoration-none">Login</a></button>
+                <button type="submit" class="btn btn-primary" >Login</button>
             </div>
             <div class="d-flex justify-content-center m-2">
                 <a href="../Lista-de-espera/listadeespera.html" class="text-white">Faça seu cadastro!</a>
