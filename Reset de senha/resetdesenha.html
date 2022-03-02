@@ -1,54 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=div class="container">
-    <link rel="stylesheet" href="tentativa.css"></style>
-    
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1,0">
+  <link rel="stylesheet" href="../Bootstrap/scss/custom.css">
+  <link rel="stylesheet" href="../Bootstrap/node_modules/bootstrap/compiler/bootstrap.css">
+  <script src="../Bootstrap/node_modules/jquery/dist/jquery.js" defer></script>
+  <script src="../Bootstrap/node_modules/popper.js/dist/popper.js" defer></script>
+  <script src="../Bootstrap/node_modules/bootstrap/dist/js/bootstrap.js" defer></script>
+  <link rel="icon" href="../imagens/JaSOsf.gif">
+  <title>Recuperação de Senha</title>
 </head>
-<style>
-body{
 
-  text-align: center;
-}
-
-</style>
 <body>
-
-    <h1> JASO 🤖 </h1>
-    <a class="links" id="paracadastro"></a>
-    <a class="links" id="paralogin"></a>
-    
-    <div class="content">      
-      <!--FORMULÁRIO DE LOGIN-->
-      <div id="login">
-        <form method="post" action=""> 
-          <h1>Recuperar senha </h1> 
-          <p> 
-            <label for="email">Digite Seu e-mail Ou Seu Telefone</label>
-            <input id="email" name="email" required="required" type="email" placeholder="name@example.com"  reqired/>
-          </p>
-          
-        
-          
-          
-          <p class="link">
-           
-            <a href="reset2.html.html" > Enviar Codigo</a>
-          </p>
-          
-            </div>
-          
-         
-        </form>
+  <header class="d-flex justify-content-center m-5 border-bottom border-primary ">
+    <h1 class="fst-italic">Recupere sua Senha</h1>
+  </header>
+  <main>
+   <form class="border border-5 p-3 m-5">
+       <div class="d-flex justify-content-center">
+      <div class="m-3 w-75">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
       </div>
-    </div>
   </div>
-    <title>Document</title>
-
-
-    
+     <div class="d-flex justify-content-center m-3">
+      <a href="../Reset de senha/reset2.html" class="btn btn-primary">Enviar Código</a>
+  </div>
+    </form>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </main>
+  <footer class="dark ">
+    <img src="../imagens/Frontenders.png" class="align-items-center ms-3 mt-2">
+    <section class="d-flex justify-content-center gap-5 coll">
+      <div>
+        <p class="fs-4"><strong>Endereços</strong><br></p>
+          <p class="hover">Endereço 1<br>
+          <a href="https://www.google.com.br/maps/place/M%C3%A9qui+1000/@-23.5603467,-46.6667811,15z/data=!3m1!4b1!4m5!3m4!1s0x94ce59dda627a4c1:0x5b2894a7ce278306!8m2!3d-23.560369!4d-46.6580287" class="text-white text-decoration-none">Av.Paulista, 1811<br>
+          São Paulo - SP</a><br></p>
+          <p class="hover">Endereço 2<br>
+          R.Engo.Ostoja Roguski<br>
+          Curituba - PR<br></p>
+          <p class="hover">Endereço 3 <br>
+          R.Rio da Prata, 1370<br>
+          Rio de Janeiro - RJ</p>
+      </div>
+      <div>
+        <p class="fs-4"><strong>Informações</strong><br></p>
+          <p class="hover"><a href="../Home/Contatos.html" class="text-white text-decoration-none">Contato</a><br><br></p>
+          <p class="hover">Cadastro<br><br></p>
+          <p class="hover">Serviços<br><br></p>
+          <p class="hover">Termos e Condições<br><br></p>
+      </div>
+      <div>
+        <p class="fs-4"><strong>Empresa</strong><br></p>
+          <p class="hover">Sobre<br><br></p>
+          <p class="hover">Trabalhe Conosco<br><br></p>
+          <p class="hover">Noticias<br><br></p>
+          <p class="hover">Investidores<br><br></p>
+          <p class="hover">Parceiros<br><br></p>
+      </div>
+    </section>
+  </footer>
 </body>
+
 </html>

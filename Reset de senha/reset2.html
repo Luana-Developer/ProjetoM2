@@ -1,57 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-   
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../script.js" defer></script>
+  <link rel="stylesheet" href="../Bootstrap/scss/custom.css">
+  <link rel="stylesheet" href="../Bootstrap/node_modules/bootstrap/compiler/bootstrap.css">
+  <script src="../Bootstrap/node_modules/jquery/dist/jquery.js" defer></script>
+  <script src="../Bootstrap/node_modules/popper.js/dist/popper.js" defer></script>
+  <script src="../Bootstrap/node_modules/bootstrap/dist/js/bootstrap.js" defer></script>
+  <link rel="icon" href="../imagens/JaSOsf.gif">
+    <script src="reset.js" defer></script>
+  <title>Alterar Senha</title>
 </head>
-<script src="reset.js" defer> </script>
 
 <body>
-
-    <h1> JASO 🤖 </h1>
-    <a class="links" id="paracadastro"></a>
-    <a class="links" id="paralogin"></a>
-    
-    
-          <h1>Alterar senha</h1> 
-          
-       
-          <form name="formuser" action="" method="POST">
-          <p> 
-            Codigo recebido
-            <input name="number" required="required" type="text" placeholder="123456"/> 
-          </p>
-
-          <p> 
-            Nova Senha
-            <input name="senha" required="required" type="password" placeholder="*****"/> <br><br>
-
-            Confirme Sua senha
-            <input  name="rep_senha" required="required" type="password" placeholder="****" />
-
-          </p>
-
-          <input type="submit" onclick="return validar()">
-          <p> 
-            
-            <input type="submit" value="Alterar Senha" >
-            <a href="codigoenviado.html"></a>
-          </p>
-          
-          <p class="link">  
-            Já tem conta?
-            <a href="login.html"> Ir para Login </a><button
-          </p>
-        </form>
+  <header class="d-flex justify-content-center m-5">
+    <h1 class="display-1 border-bottom border-primary fst-italic">Alterar Senha</h1>
+  </header>
+  <main>
+    <form class="border border-5 p-2 m-5">
+      <div class="d-flex justify-content-center">
+        <div class="mb-3 w-75 mt-5">
+          <label for="codigo" class="form-label">Código Recebido</label>
+          <input type="number" class="form-control" id="codigo" placeholder="12345678">
+        </div>
       </div>
-    </div>
-  </div>
-    <title>Document</title>
-
-
-    
+      <div class="d-flex justify-content-center">
+        <div class="mb-3 w-75">
+          <label for="senha" class="form-label">Nova Senha</label>
+          <input type="password" class="form-control" id="senha" placeholder="********">
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <div class="mb-3 w-75">
+          <label for="senha" class="form-label">Confirme Senha</label>
+          <input type="password" class="form-control" id="senha" placeholder="********">
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <div id="alertaplace"></div>
+        <button type="button" class="btn btn-primary p-2 m-3 mt-5" id="AlertBtn">Cadastre-se</button>
+        </div>
+        </div>
+      <div class="d-flex justify-content-center m-2">
+        <p>Já tem conta? <a href="../Login/login.html" class="text-white"> Ir para Login</a></p>
+      </div>
+      </div>
+    </form>
+    <br><br><br><br>
+  </main>
+  <footer class="dark ">
+    <img src="../imagens/Frontenders.png" class="align-items-center ms-3 mt-2">
+    <section class="d-flex justify-content-center gap-5 coll">
+      <div>
+        <p class="fs-4"><strong>Endereços</strong><br></p>
+          <p class="hover">Endereço 1<br>
+          <a href="https://www.google.com.br/maps/place/M%C3%A9qui+1000/@-23.5603467,-46.6667811,15z/data=!3m1!4b1!4m5!3m4!1s0x94ce59dda627a4c1:0x5b2894a7ce278306!8m2!3d-23.560369!4d-46.6580287" class="text-white text-decoration-none">Av.Paulista, 1811<br>
+          São Paulo - SP</a><br></p>
+          <p class="hover">Endereço 2<br>
+          R.Engo.Ostoja Roguski<br>
+          Curituba - PR<br></p>
+          <p class="hover">Endereço 3 <br>
+          R.Rio da Prata, 1370<br>
+          Rio de Janeiro - RJ</p>
+      </div>
+      <div>
+        <p class="fs-4"><strong>Informações</strong><br></p>
+          <p class="hover"><a href="../Home/Contatos.html" class="text-white text-decoration-none">Contato</a><br><br></p>
+          <p class="hover">Cadastro<br><br></p>
+          <p class="hover">Serviços<br><br></p>
+          <p class="hover">Termos e Condições<br><br></p>
+      </div>
+      <div>
+        <p class="fs-4"><strong>Empresa</strong><br></p>
+          <p class="hover">Sobre<br><br></p>
+          <p class="hover">Trabalhe Conosco<br><br></p>
+          <p class="hover">Noticias<br><br></p>
+          <p class="hover">Investidores<br><br></p>
+          <p class="hover">Parceiros<br><br></p>
+      </div>
+    </section>
+  </footer>
 </body>
+
 </html>

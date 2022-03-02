@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="main.js" defer></script>
+  <script src="../scripts.js" defer></script>
+  <link rel="stylesheet" href="../Bootstrap/scss/custom.css">
+  <link rel="stylesheet" href="../Bootstrap/node_modules/bootstrap/compiler/bootstrap.css">
+  <script src="../Bootstrap/node_modules/jquery/dist/jquery.js" defer></script>
+  <script src="../Bootstrap/node_modules/popper.js/dist/popper.js" defer></script>
+  <script src="../Bootstrap/node_modules/bootstrap/dist/js/bootstrap.js" defer></script>
+  <link rel="icon" href="../imagens/JaSOsf.gif">
+  <title>Cadastro</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top border-bottom bg-secondary " id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="../Home/index.html"><img src="../imagens/felogo.png" width="150"></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto my-2 my-lg-0">
+          <li class="nav-item hover"><a class="nav-link text-black fs-5" href="../Home/apresentacao.html">Sobre</a></li>
+          <li class="nav-item hover"><a class="nav-link text-black fs-5" href="../Home/Contatos.html">Contato</a></li>
+          <li class="nav-item hover"><a class="nav-link text-black fs-5" href="../Login/login.html">Login</a></li>
+          <li class="nav-item hover"><a class="nav-link text-black fs-5"
+              href="../Lista-de-espera/listadeespera.html">Cadastre-se</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header>
+    <br><br>
+  </header>
+  <main class="container">
+    <div class="d-flex justify-content-center m-5">
+      <h1 class="display-2 fst-italic border-bottom border-primary">Cadastre-se na Lista de espera</h1>
+    </div>
+
+    <form class="row g-3 border border-5 p-2 m-5"">
+            <div class=" col-md-6">
+      <label for="nome" class="form-label">Nome</label>
+      <input type="text" class="form-control" id="nome" placeholder="Digite seu Nome" required>
+      </div>
+      <div class="col-md-6">
+        <label for="sobnome" class="form-label">Sobrenome</label>
+        <input type="text" class="form-control" id="sobnome" placeholder="Digite seu Sobrenome" required>
+      </div>
+      <div class="col-md-6">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Digite seu Email" required>
+      </div>
+      <div class="col-md-6">
+        <label for="rgcpf" class="form-label">Rg ou Cpf</label>
+        <input type="number" class="form-control" id="rgcpf" placeholder="Digite seu Rg ou Cpf" required>
+      </div>
+      <div class="col-md-6">
+        <label for="senha" class="form-label">Senha</label>
+        <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" required>
+      </div>
+      <div class="col-md-6">
+        <label for="senha" class="form-label">Confirme Senha</label>
+        <input type="password" class="form-control" id="confsenha" placeholder="Confirme sua senha" required>
+      </div>
+      <div class="col-md-6">
+        <label for="cep" class="form-label">Consulte seu CEP</label>
+        <input type="text" class="form-control" id="cep" placeholder="XXXXX-XXX" required>
+      </div>
+      <div class="endereco">
+        <label for="endereco" class="form-label">Endereço</label>
+        <input type="text" class="form-control" id="endereco" required>
+      </div>
+      <div class="endereco">
+        <label for="numero" class="form-label">Numero</label>
+        <input type="numero" class="form-control" id="numero" required>
+      </div>
+      <div class="endereco">
+        <label for="bairro" class="form-label">Bairro</label>
+        <input type="text" class="form-control" id="bairro" required>
+      </div>
+      <div class="endereco">
+        <label for="cidade" class="form-label">Cidade</label>
+        <input type="text" class="form-control" id="cidade" required>
+      </div>
+      <div class="endereco">
+        <label for="estado" class="form-label">Estado</label>
+        <input type="text" class="form-control" id="estado" required>
+      </div>
+      <p class="d-flex justify-content-center fs-4">Escolha seu Plano</p>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+        <label class="form-check-label" for="flexRadioDefault1">
+          Plano Anual
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+        <label class="form-check-label" for="flexRadioDefault2">
+          Plano Trimestral
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+        <label class="form-check-label" for="flexCheckDefault">
+          Li e Aceito os <span class="hover">Termos e Condições</span>
+        </label>
+        <div class="d-flex justify-content-center">
+        <div id="liveAlertPlaceholder"></div>
+        <button type="button" class="btn btn-primary p-2 m-3 mt-5" id="liveAlertBtn">Cadastre-se</button>
+        </div>
+        </div>
+        <div class="d-flex justify-content-center m-2 fs-4">
+          <a href="../Login/login.html" class="text-white">Faça seu Login!</a>
+      </div>
+    </form>
+  </main>
+  <footer class="dark">
+    <img src="../imagens/Frontenders.png" class="align-items-center ms-3 mt-2">
+    <section class="d-flex justify-content-center gap-5 coll">
+      <div>
+        <p class="fs-4"><strong>Endereços</strong><br></p>
+          <p class="hover">Endereço 1<br>
+          <a href="https://www.google.com.br/maps/place/M%C3%A9qui+1000/@-23.5603467,-46.6667811,15z/data=!3m1!4b1!4m5!3m4!1s0x94ce59dda627a4c1:0x5b2894a7ce278306!8m2!3d-23.560369!4d-46.6580287" class="text-white text-decoration-none">Av.Paulista, 1811<br>
+          São Paulo - SP</a><br></p>
+          <p class="hover">Endereço 2<br>
+          R.Engo.Ostoja Roguski<br>
+          Curituba - PR<br></p>
+          <p class="hover">Endereço 3 <br>
+          R.Rio da Prata, 1370<br>
+          Rio de Janeiro - RJ</p>
+      </div>
+      <div>
+        <p class="fs-4"><strong>Informações</strong><br></p>
+          <p class="hover"><a href="../Home/Contatos.html" class="text-white text-decoration-none">Contato</a><br><br></p>
+          <p class="hover">Cadastro<br><br></p>
+          <p class="hover">Serviços<br><br></p>
+          <p class="hover">Termos e Condições<br><br></p>
+      </div>
+      <div>
+        <p class="fs-4"><strong>Empresa</strong><br></p>
+          <p class="hover">Sobre<br><br></p>
+          <p class="hover">Trabalhe Conosco<br><br></p>
+          <p class="hover">Noticias<br><br></p>
+          <p class="hover">Investidores<br><br></p>
+          <p class="hover">Parceiros<br><br></p>
+      </div>
+    </section>
+  </footer> 
+</body>
+
+</html>
